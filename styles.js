@@ -5,27 +5,13 @@ var person = {
       return this.firstName + " " + this.lastName;
     }
   };
-  
+  Var maleName=Kwasi,Kwadwo,Kwabena,Kwaku,Yaw,Kofi,Kwame;
+  var maleName=Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday;
+  var femaleName=Akosua,Adwoa,Abenaa,Akua,Yaa,Afua,Ama;
+  var femaleName= Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday;
+
   // Display data from the object using a getter:
   document.getElementById("demo").innerHTML = person.fullName;
-        Male
-        Sunday: Kwasi
-        Monday: Kwadwo
-        Tuesday: Kwabena
-        Wednesday: Kwaku
-        Thursday:  Yaw
-        Friday: Kofi
-        Saturday: Kwame
-
-        Female
-        Sunday: Akosua
-        Monday: Adwoa
-        Tuesday: Abenaa
-        Wednesday: Akua
-        Thursday:  Yaa
-        Friday: Afua
-        Saturday: Ama
-
     function validateForm() {
         var x = document.forms["myForm"]["fname"].value;
         if (x == <"") {
