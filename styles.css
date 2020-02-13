@@ -3,8 +3,11 @@
     background-size: cover;
     font-size: xx-large;
     font-style: italic;
-    line-height: 5em;
+    line-height:3.0em;
     text-align: center;
+    border-width: 0.5em;
+    border-color:green;
+    border-style: groove;
 }
 h2{
     font-size: xx-large;
@@ -14,10 +17,19 @@ h2{
     font-size: xx-large;
     font-weight: 800px;
     color: blue;
-    display: contents;
-    flex-flow: column;
+    flex-flow: row;
     float: center;
 }
 h1{
     background-color: darkgrey;
+    border-width: 0.3em;
+    border-color: green;
+    border-style: groove;
+}
+footer{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 0.5em;
+    border-color: turquoise;
+    border-style: groove;
 }
