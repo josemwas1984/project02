@@ -1,0 +1,23 @@
+.container{
+    background-image:url("https://netstorage-yen.akamaized.net/images/3o3bpd10qts21b2a1g.jpg;");
+    background-size: cover;
+    font-size: xx-large;
+    font-style: italic;
+    line-height: 5em;
+    text-align: center;
+}
+h2{
+    font-size: xx-large;
+    color:blue;
+}
+.forms {
+    font-size: xx-large;
+    font-weight: 800px;
+    color: blue;
+    display: contents;
+    flex-flow: column;
+    float: center;
+}
+h1{
+    background-color: darkgrey;
+}
