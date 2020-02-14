@@ -1,34 +1,35 @@
-var person = {
-    firstName: "John",
-    lastName : "Doe",
-    get fullName() {
-      return this.firstName + " " + this.lastName;
-    }
-  };
-  Var maleName=Kwasi,Kwadwo,Kwabena,Kwaku,Yaw,Kofi,Kwame;
-  var maleName=Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday;
-  var femaleName=Akosua,Adwoa,Abenaa,Akua,Yaa,Afua,Ama;
-  var femaleName= Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday;
+dayOfMonth = parseInt(document.getElementById("monthday").value);
 
-  // Display data from the object using a getter:
-  document.getElementById("demo").innerHTML = person.fullName;
-    function validateForm() {
-        var x = document.forms["myForm"]["fname"].value;
-        if (x == <"") {
-          alert("Date invalid");
-          return false;
-        }
-      }
-      <input id="date" type="number" min="01" max="31" required></input>
-      <input id="month" type="number" min="01" max="12" required></input> 
-      <input id="year" type="number" min="01" max="2020" required></input>
-      <button onclick="myFunction()">OK</button>
-      
-      <script>
-function myFunction() {
-  var inpObj = document.getElementById("date","month","year");
-  if (!inpObj.checkValidity()) {
-    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+
+if((century == "") && (century <= 0) && (century >= 30)){
+if(century == ""){
+  alert("Input the correct gender");
+}else if ((year == "") && (year <= 0) && (year > 5000)){
+  return false;
+}else if (year == ""){
+  alert("Input the correct year");
+}else if ((month == "") && (month > 12) && (month <= 0)) {
+  return false;
+}else if (month == ""){
+  alert("Input the correct month");
+}else if((dayOfMonth == "") && (dayOfMonth > 31) && (dayOfMonth <= 0)){
+  return false;
+}else if(dayOfMonth == ""){
+  alert("input the correct date");
+  return false;
+}
+}
+//Calculate function
+function calculateDay(){
+  dayOfWeek = ((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + dayOfMonth) % 7) -1;
+  console.log(dayOfWeek); //Test the calculateDay function
+  return (Math.floor(dayOfWeek));
+  if (dayOfWeek < 0) {
+    dayOfWeek = dayOfWeek * -1;
+  }
+  else if (dayOfWeek > 0) {
+    return dayOfWeek;
   }
 }
-</script>
+
+//main caller function
