@@ -1,7 +1,7 @@
 ## project:
-I know You.
+Know your Akan Name.
 ## Description:
-This is a project where you can search for your Name by when you were born depending on gender.
+This is an application where you can get your Akan Name by entering your gender and Birthday..
 ## Author:
 Joseph Mwangi Maina
 Date of Birth: 25/12/1979
