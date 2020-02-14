@@ -7,7 +7,7 @@
     border-width: 0.5em;
     border-color:green;
     border-style: groove;
-    line-height: 3.0em;
+    line-height: 5.0em;
 }
 h2{
     font-size: xx-large;
@@ -33,5 +33,5 @@ footer{
     border-radius: 0.5em;
     border-color: turquoise;
     border-style: groove;
-    line-height: 5.0em;
+    line-height: 1.5em;
 }
