@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <title></title>
         <link  rel ="stylesheet" type="text/css" href="styles.js" >
         <link rel="stylesheet" type="text/css" href="styles.css" >
-    </head>
- <div class="container">   
-         <h1>Know Your Name</h1>
-    <body>
-    <form>
-<div class="forms">
-        <form action="/action_page.php">
-               Enter date of birth.
-             <input type="date" name="birthday" max="1979-12-31"><br>
-               Select gender.
-             <input type="radio" name="gender" value="male" checked> Male<br>
-             <input type="radio" name="gender" value="female"> Female<br>
-             <input type="radio" name="gender" value="other"> Other
-             <input type="submit" value="Submit">
-        </form>
-    </form>
+  </head>
+                     <h1>Know Your Name</h1>
+  <div class="container"> 
+     <body>
+      <div class="form-group top-form">
+        <label for="century" class="labels">Century</label>
+        <input type="number" class="form-control" placeholder="Enter the century" id="century" required  min="0" max="30">
+      </div>
+      <div class="form-group">
+        <label for="year" class="labels">Year</label>
+        <input type="number" placeholder="Enter the year" class="form-control" id="year" required min="0" max="100">
+      </div>
+      <div class="form-group">
+        <label for="month" class="labels">Month</label>
+        <input type="number" class="form-control" placeholder="Enter the month of the year" id="month" required min="0" max="12">
+      </div>
+      <div class="form-group">
+        <label for="monthDay" class="labels">Day of month</label>
+        <input type="number" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="0" max="12">
+      </div>
+      <form class="radio-button">
+        <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+        <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+      </form>
+      <br>
+      <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
+      <h1 id="result"></h>
     </body>
- </div>
-</html>
+  </div>
+  </html>
 <footer>
     <p>Reach us on tweeter and help us make the content wider</p>
 </footer>
