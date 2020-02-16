@@ -1,29 +1,63 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-        <title></title>
-        <link  rel ="stylesheet" type="text/css" href="styles.js" >
-        <link rel="stylesheet" type="text/css" href="styles.css" >
-  </head>
-                     <h1>Know Your Name</h1>
-  <div class="container"> 
-     <body>
-      <form action="/action_page.php">
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday">
-        <input type="submit" value="Submit">
-      <form class="radio-button">
-        <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
-        <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
-      </form>
-      <br>
-      <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
-      <h1 id="result"></h> 
-        </form>
-       </body>
-  </div>
-  
-   <footer>
-    <p>Reach us on tweeter and help us make the content wider</p>
- </footer>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Birthday Akan</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.js">
+</head>
+
+<body>
+    <div class="main">
+        <div id="welcome-message">
+            <h1 id="mheading">Know Your Akan Name</h1>.
+
+        </div>
+        <div id="welcome-story">
+            <h1>Ghana Names.</h1>
+            <h2 id="about">
+				<p>The people of Ghana have their special way of naming their new borns according to the day they were born.</p>
+				<p>Here is an application that gives the Akan Name according to the birthday.</p>
+			</h2>
+        </div>
+        <div class="date-form">
+            <form name="myForm" onsubmit="return aggregateFunctions()">
+                <label class="label" id="birthday">Your Birthday</label><br>
+                <div id="result"></div><br>
+                <label>Day</label>
+                <input type="text" id="mdate" name="mdate" value="" placeholder="01">
+                <label>Month</label>
+                <input type="text" id="mmonth" name="mmonth" value="" placeholder="12">
+                <label>Year</label>
+                <input type="text" id="myear" name="myear" value="" placeholder="2001">
+                <div id="date"></div>
+
+                <div id="the-gender" class="label">Select Gender</div>
+
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female<br>
+
+
+                <input type="submit" value="SUBMIT">
+                <input type="submit" value="FIND ANOTHER" onClick="clearInput()">
+
+            </form>
+        </div>
+        <div class="imges">
+
+        </div>
+        <div class="output">
+            <div id="myAkan">
+                <h1>Your Akan Name Is=</h1>
+            </div>
+            <div id="reason"></div>
+        </div>
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
