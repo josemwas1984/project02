@@ -1,5 +1,4 @@
 var century, year, month, dayOfMonth, dayOfWeek, day;
-//Get input
 function getInput(){
   century = parseInt(document.getElementById("century").value);
   year = parseInt(document.getElementById("year").value);
@@ -21,33 +20,23 @@ function getInput(){
     return false;
   }
 }
-//Calculate func
 function calculateDay(){
     getInput();
     dayOfWeek = ((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + dayOfMonth) % 7) -1;
-    console.log(dayOfWeek); //Test the calculateDay function
+    console.log(dayOfWeek);
     return (Math.floor(dayOfWeek));
-    if (dayOfWeek < 0) {
-      dayOfWeek = dayOfWeek * -1;
-    }
-    else if (dayOfWeek > 0) {
-      return dayOfWeek;
-    }
 }
 
-//main caller func
  function checkDayOfWeek(){
      day = calculateDay();
       checkGender();
-      console.log("The function runs");//Test chackDayOfWeek function
+      console.log("The function runs");
 }
 
-//arrays
 let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
 
-//get selected radio button
 function checkGender(){
   var gen = document.getElementsByName("rads");
   if(gen[0].checked == true){
@@ -55,7 +44,7 @@ function checkGender(){
   }else if(gen[1].checked == true){
       var gender = "female";
   }else {
-    console.log("pass");//Test the radio buttons
+    console.log("pass");
   }
     switch(gender){
         case gender = "male":
@@ -82,7 +71,6 @@ function checkGender(){
                   document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan name is " + maleNames[6];
                 break;
                 default:
-                // console.console.log("Pass");//Test male case
               }
         break;
         case gender = "female":
@@ -112,6 +100,6 @@ function checkGender(){
               }
         break
         default:
-        console.log("pass");//Test gender switch
+        console.log("pass");
     }
 }
