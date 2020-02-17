@@ -4,24 +4,15 @@
     background-repeat: no-repeat;
     line-height: 5em;
 }
-h2{
+p {
     font-size: xx-large;
-    color:blue;
-    line-height: 5.0em;
-}
-.date-form {
-    font-size: xx-large;
-    font-weight: 600px;
-    color:purple;
-    flex-flow: row;
-    float: center;
+    color: white;
+    font-weight: bold;
 }
 h1{
-    background-color: darkgrey;
-    border-width: 0.3em;
-    border-color: green;
-    border-style: groove;
-}
+    background-color: gray;
+    font-style: italic;
+} 
 footer{
     background-color: blueviolet;
     color: white;
