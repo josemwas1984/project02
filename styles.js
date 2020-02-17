@@ -222,8 +222,6 @@ function findUserAkanName() {
                 }
             }
         }
-        // alert(akanName);
-
     } else {
         alert("Error occured!");
     }
@@ -238,8 +236,6 @@ function findUserAkanName() {
     return importantDetails;
 
 }
-
-//prints user akan name to the DOM
 function printUserAkanName() {
     clearInterval(changeBackgroundColor);
     var akanDetails = findUserAkanName();
@@ -248,7 +244,6 @@ function printUserAkanName() {
     mGender = akanDetails.mGender;
 
     var doc = document.getElementsByTagName("BODY")[0];
-    doc.style.backgroundImage = "url('https://codemyui.com/wp-content/uploads/2016/07/flying-birds-animation-using-three_js-1.gif')";
     doc.style.backgroundColor = "#f08a2d";
     doc.style.backgroundRepeat = "no-repeat";
     doc.style.backgroundSize = "cover";
@@ -263,8 +258,6 @@ function printUserAkanName() {
 
 
 }
-
-//clears the user input form 
 function clearInput() {
     window.location.reload();
 }
