@@ -1,64 +1,56 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Birthday Akan</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="styles.js">
-</head>
-
-<body>
-    <div class="main">
-        <div id="welcome-message">
-            <h1 id="mheading">Know Your Akan Name</h1>.
-
-        </div>
-        <div id="welcome-story">
-            <h1>Ghana Names.</h1>
-            <h2 id="about">
-				<p>The people of Ghana have their special way of naming their new borns according to the day they were born.</p>
-				<p>Here is an application that gives the Akan Name according to the birthday.</p>
-			</h2>
-        </div>
-        <div class="date-form">
-            <form name="myForm" onsubmit="return aggregateFunctions()">
-                <label class="label" id="birthday">Your Birthday</label><br>
-                <div id="result"></div><br>
-                <label>Day</label>
-                <input type="text" id="mdate" name="mdate" value="" placeholder="01">
-                <label>Month</label>
-                <input type="text" id="mmonth" name="mmonth" value="" placeholder="12">
-                <label>Year</label>
-                <input type="text" id="myear" name="myear" value="" placeholder="2001">
-                <div id="date"></div>
-
-                <div id="the-gender" class="label">Select Gender</div>
-
-                <input type="radio" name="gender" value="male">Male
-                <input type="radio" name="gender" value="female">Female<br>
-
-
-                <input type="submit" value="SUBMIT">
-                <input type="submit" value="FIND ANOTHER" onClick="clearInput()">
-
-            </form>
-        </div>
-        <div class="imges">
-
-        </div>
-        <div class="output">
-            <div id="myAkan">
-                <h1>Your Akan Name Is=</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.js">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron parent">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="jumbotron p-0 left">
+                <div class="overlay">
+                  <h1 class="text-center akan">Get Your Akan Name.</h1>
+                  <hr class="my-4">
+                  <p class="p-text">The people of Ghana have a way of Naming their new borns.</p>
+                    <p class="p-text">Here's an application that gives the akan name by date and day of birth.</p>
+                </div>
             </div>
-            <div id="reason"></div>
+          </div>
+          <div class="col-md-6 right">
+            <div class="panel col-sm-6 offset-sm-3">
+                    <div class="form-group top-form">
+                      <label for="century" class="labels">Century</label>
+                      <input type="number" class="form-control" placeholder="Enter the century" id="century" required  min="0" max="30">
+                    </div>
+                    <div class="form-group">
+                      <label for="year" class="labels">Year</label>
+                      <input type="number" placeholder="Enter the year" class="form-control" id="year" required min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                      <label for="month" class="labels">Month</label>
+                      <input type="number" class="form-control" placeholder="Enter the month of the year" id="month" required min="0" max="12">
+                    </div>
+                    <div class="form-group">
+                      <label for="monthDay" class="labels">Day of month</label>
+                      <input type="number" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="0" max="12">
+                    </div>
+                    <form class="radio-button">
+                      <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+                      <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+                    </form>
+                    <br>
+                    <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
+                    <h1 id="result"></h1>
+            </div>
+          </div>
         </div>
-    </div>
-<footer>
-    Contact us for more:
-    <a href="https://www.facebook.com/"><img src= "https://bit.ly/2Sbh744" img="jpg" height=50px width=50px; ></a>
-</footer>
-</body>
+      </div>
 
+  </div>
+  <script src="js/script.js"></script>
+  </body>
 </html>
